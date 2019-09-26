@@ -13,4 +13,10 @@ public class PowerOfTwo {
         return result;
     }
 
+    public double computeNegativeExponent(int exponent) {
+        for (int i = -1; i >= exponent; i--) {
+            result *= 2.0;
+        }
+        return 1.0 / result;
+    }
 }
